@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import AuthService from './services/AuthService';
 import Login from './components/Login';
+import Register from './components/Register'; // <-- Import the Register component
+
 import Profile from './components/Profile';
 import Home from './components/Home';
 import BoardUser from './components/BoardUser'; // Assuming this component exists and you want to use it
@@ -64,6 +66,15 @@ function App() {
               >
                 Login
               </Link>
+
+              {/* Add the Register link here */}
+              <Link
+                to="/register"
+                className="text-white bg-purple-500 hover:bg-purple-600 px-4 py-1 rounded-md transition-colors duration-300 font-medium"
+              >
+                Register
+              </Link>
+
             </>
           )}
         </div>
@@ -74,6 +85,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} /> {/* <-- Add this new Route */}
           <Route path="/profile" element={<Profile />} />
           <Route path="/user" element={<BoardUser />} />
         </Routes>
