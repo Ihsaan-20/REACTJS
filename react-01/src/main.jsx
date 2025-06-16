@@ -5,10 +5,12 @@ import App from './App.jsx'
 import ToggleMessage from './ToggleMessage.jsx'
 import TextInput from './TextInput.jsx'
 import TodoList from './TodoList.jsx'
+import DataSubmissionForm from './DataSubmissionForm.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <TodoList />
+    <DataSubmissionForm />
+    {/* <TodoList /> */}
     {/* <TextInput /> */}
     {/* <App /> */}
     {/* <ToggleMessage /> */}
