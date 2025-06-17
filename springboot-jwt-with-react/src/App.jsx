@@ -29,7 +29,7 @@ function App() {
       <nav className="bg-gradient-to-r from-indigo-600 to-purple-700 p-4 shadow-lg flex justify-between items-center text-white sticky top-0 z-50">
         {/* Logo/Home Link */}
         <Link to="/" className="text-xl font-bold hover:text-indigo-200 transition-colors duration-300">
-          My App
+          React JWT App
         </Link>
 
         {/* Navigation Links */}
